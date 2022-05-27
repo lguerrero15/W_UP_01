@@ -44,21 +44,27 @@ Position are a categorical veritable. Push-ups is a numerical variable. i will d
 boxplot(pushups~position,data=mydata)
 ```
 
+
+
+
+There is pushups on the y-axis of the box plot. The average push ups for the positions appears to be different. the skills positions appears to have more push ups based off the y axis. 
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 ```{r}
 favstats(pushups~position,data=mydata)
 ```
+The median for both position has a very big difference. It appears the median for the skill position is higher then the line position. The max for the skill position is also higher then the line position, the line position max is 38 while the skill position goes up to 108. From the data results is seems that the skill position is far more capable in doing more pushups.  
+
 ## Inferential Results
 
-
-
-
-The median for both position has a very big difference. It appears the median for the skill position is higher then the line position. The max for the skill position is also higher then the line position, the line position max is 38 while the skill position goes up to 108. From the data results is seems that the skill position is far more capable in doing more pushups.  
 <!--State hypothesis clearly. Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc. Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
-
+```{r}
+t.test(pushups~position,data=mydata)
+```
+Our p-value is 0.000009421. Our df value is 27.079. Our t value is -5.4341. Our alternative hypothesis is shown. It states true difference in means between group Line and group Skill is not equal to 0. Mean in group line is 17.12500, mean group in skill is 49.72727. If our null hypothisis is true, the p value is the probability of getting our results. line vs skill. its very rare. the p value is so small we would reject the null hypothisis. 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason. Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
