@@ -30,7 +30,7 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 # Methods
 
 <!--Decide on your methods: use "variable analysis" or other appropriate descriptors. Make sure to choose at least one graphical method and at least one numerical method.!-->
-
+Position are a categorical veritable. Push-ups is a numerical variable. i will do an analysis that explains push-ups based on position.
 # Results
 
 <!--Divide this section into two sub-sections: One for your descriptive results and one for your inferential results.!-->
@@ -40,13 +40,22 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 ### Graphical Descriptive Results
 
 <!--Graphical results here. Make sure to show your code. Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too. Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+```{r}
+boxplot(pushups~position,data=mydata)
+```
 
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
-
+```{r}
+favstats(pushups~position,data=mydata)
+```
 ## Inferential Results
 
+
+
+
+The median for both position has a very big difference. It appears the median for the skill position is higher then the line position. The max for the skill position is also higher then the line position, the line position max is 38 while the skill position goes up to 108. From the data results is seems that the skill position is far more capable in doing more pushups.  
 <!--State hypothesis clearly. Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc. Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
 
