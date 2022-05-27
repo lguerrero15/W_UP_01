@@ -65,7 +65,9 @@ The median for both position has a very big difference. It appears the median fo
 t.test(pushups~position,data=mydata)
 ```
 Our p-value is 0.000009421. Our df value is 27.079. Our t value is -5.4341. Our alternative hypothesis is shown. It states true difference in means between group Line and group Skill is not equal to 0. Mean in group line is 17.12500, mean group in skill is 49.72727. If our null hypothisis is true, the p value is the probability of getting our results. line vs skill. its very rare. the p value is so small we would reject the null hypothisis. 
+
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason. Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
+The original question was "is there a difference between the number of push ups of a skill group verses the line group, under a specific amount of time?" Our response based off our numerical description results and our inferential results; we can see that the skill position can do more push ups than the line position under any amount of time given. we used a boxplot and a table to figure out our values and percentage.
